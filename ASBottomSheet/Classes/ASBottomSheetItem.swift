@@ -14,7 +14,7 @@ open class ASBottomSheetItem: NSObject {
     private var tintedIcon:UIImage? = nil
     
     
-    var action: ActionSuccess? = nil
+    open var action: ActionSuccess? = nil
     
     public init(withTitle title:String, withIcon icon:UIImage) {
         super.init()
