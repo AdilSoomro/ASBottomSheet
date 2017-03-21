@@ -1,0 +1,6 @@
+framework module ASBottomSheet {
+  umbrella header "ASBottomSheet-umbrella.h"
+
+  export *
+  module * { export * }
+}

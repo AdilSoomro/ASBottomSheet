@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'ASBottomSheet_Example' do
   pod 'ASBottomSheet', :path => '../'
-
-  target 'ASBottomSheet_Tests' do
-    inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
-  end
 end

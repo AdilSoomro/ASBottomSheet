@@ -7,12 +7,20 @@
 //
 
 import UIKit
-
+import ASBottomSheet
 class ViewController: UIViewController {
-
+    var bottomSheet: ASBottomSheet!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let first = ASBottomSheetItem(withTitle: "Add Image", withIcon: UIImage.init(named: "image_icon")!)
+        let second = ASBottomSheetItem(withTitle: "Add Sticker", withIcon: UIImage.init(named: "sticker_icon")!)
+        let third = ASBottomSheetItem(withTitle: "Add Image", withIcon: UIImage.init(named: "image_icon")!)
+        
+        bottomSheet = ASBottomSheet.menu(withOptions: [first, second, third])
+        
+        UIToolbar.appearance().barTintColor = UIColor.darkGray
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,5 +28,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showMenu(_ sender: Any) {
+        self.bottomSheet.showMenu(fromViewController: self)
+    }
 }
 
