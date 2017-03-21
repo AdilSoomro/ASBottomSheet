@@ -21,6 +21,27 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "ASBottomSheet"
 ```
+Then import module to your view controller, make a sheet and add items to the sheet and you are done.
+
+```
+let first: ASBottomSheetItem = ASBottomSheetItem(withTitle: "Add Image", withIcon: UIImage.init(named: "image_icon")!)
+first.action = {
+    print("First Action: Add image");
+};
+let second = ASBottomSheetItem(withTitle: "Add Sticker", withIcon: UIImage.init(named: "sticker_icon")!)
+second.action = {
+    print("Second Action: Add Sticker");
+};
+let third = ASBottomSheetItem(withTitle: "Add Image", withIcon: UIImage.init(named: "image_icon")!)
+third.action = {
+    print("Third Action: Add image");
+};
+
+let bottomSheet = ASBottomSheet.menu(withOptions: [first, second, third])
+bottomSheet.showMenu(fromViewController: self)
+
+```
+
 
 ## Author
 
