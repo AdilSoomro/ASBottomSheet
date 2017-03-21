@@ -175,22 +175,6 @@ extension ASBottomSheet : UICollectionViewDataSource, UICollectionViewDelegateFl
         }
     }
     
-    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        //        let totalCellWidth = CellWidth * CellCount
-        //        let totalSpacingWidth = CellSpacing * (CellCount - 1)
-        //
-        //        let leftInset = (collectionViewWidth - CGFloat(totalCellWidth + totalSpacingWidth)) / 2;
-        //        let rightInset = leftInset
-        //
-        //        return UIEdgeInsetsMake(0, leftInset, 0, rightInset)
-        //
-        
-        let flowLayout: UICollectionViewFlowLayout  = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout;
-        let numberOfCells = self.view.frame.size.width / flowLayout.itemSize.width;
-        let edgeInsets = (self.view.frame.size.width - (numberOfCells * flowLayout.itemSize.width)) / (numberOfCells + 1);
-        return UIEdgeInsetsMake(0, edgeInsets, 0, edgeInsets);
-    }
     /**
      *  Calculates and returns the height to be consumed by the menu
      *  - return menu height
