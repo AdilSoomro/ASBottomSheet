@@ -149,16 +149,7 @@ open class ASBottomSheet: UIViewController{
         
         super.viewWillTransition(to: size, with: coordinator)
     }
-    open override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
-        super.didRotate(from: fromInterfaceOrientation)
-        
-        
-        
-        
-        
-        
-
-    }
+    
 }
 extension ASBottomSheet : UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
