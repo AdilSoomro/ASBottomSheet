@@ -45,7 +45,11 @@ bottomSheet.showMenu(fromViewController: self)
 
 ## Author
 
-AdilSoomro, adilsoomro.s@gmail.com
+AdilSoomro
+
+Website: [BooleanBites](http://booleanbites.com)
+
+Twitter: [adil_soomro](https://twitter.com/adil_soomro)
 
 ## License
 
