@@ -25,8 +25,24 @@ class ViewController: UIViewController {
         third.action = {
             print("Third Action: Add image");
         };
+        let fourth = ASBottomSheetItem(withTitle: "Add Text", withIcon: UIImage.init(named: "image_icon")!)
+        fourth.action = {
+            print("Fourth Action: Add image");
+        };
         
-        bottomSheet = ASBottomSheet.menu(withOptions: [first, second, third])
+        let fifth = ASBottomSheetItem(withTitle: "Add Shape", withIcon: UIImage.init(named: "image_icon")!)
+        fifth.action = {
+            print("Fifth Action: Add image");
+        };
+        
+        let sixth = ASBottomSheetItem(withTitle: "Add Shape", withIcon: UIImage.init(named: "image_icon")!)
+        sixth.action = {
+            print("Sixth Action: Add image");
+        };
+        
+        bottomSheet = ASBottomSheet.menu(withOptions: [first, second, third, fourth, fifth, sixth])
+//        bottomSheet = ASBottomSheet.menu(withOptions: [first, second, third])
+
         
         UIToolbar.appearance().barTintColor = UIColor.darkGray
         
