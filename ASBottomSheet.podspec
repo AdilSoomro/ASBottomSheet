@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ASBottomSheet'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'ASBottomSheet is a UIActionSheet like menu controller.'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ ASBottomSheet is a UIActionSheet like menu controller that can be used to show c
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.0'
+  s.swift_version = '5.0'
   s.source_files = 'ASBottomSheet/Classes/**/*'
   
   # s.resource_bundles = {
