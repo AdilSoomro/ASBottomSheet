@@ -27,7 +27,7 @@ import UIKit
     @IBOutlet private var collectionViewTrailingConstraints: NSLayoutConstraint!
     @IBOutlet private var collectionViewBottomConstraints: NSLayoutConstraint!
     
-    public var isOpen = false
+    @objc public var isOpen = false
     
     /**
      *  Makes a `ASBottomSheet` that can be shown from bottom of screen.
@@ -152,7 +152,7 @@ import UIKit
      *  Hides the bottom menu with animation.
      *
      */
-    open func hide() {
+    @objc open func hide() {
         //first take the menu frame and set its y origin to its bottom by adding
         //its current origin plus height
         let frame = self.view.frame
