@@ -15,7 +15,7 @@ import UIKit
  *  It is greatly inspired by the FCVerticalMenu
  */
 
-open class ASBottomSheet: UIViewController{
+@objc open class ASBottomSheet: UIViewController{
     var menuItems:[ASBottomSheetItem]? = nil
     
     @IBOutlet var collectionView: UICollectionView!
@@ -33,7 +33,7 @@ open class ASBottomSheet: UIViewController{
      *  Makes a `ASBottomSheet` that can be shown from bottom of screen.
      *  - parameter array: the options to be shown in menu collection view
      */
-    public static func menu(withOptions array:[ASBottomSheetItem]) -> ASBottomSheet?{
+    @objc public static func menu(withOptions array:[ASBottomSheetItem]) -> ASBottomSheet?{
         
         let podBundle:Bundle? = Bundle(for:ASBottomSheet.classForCoder())
         let storyboard:UIStoryboard?
@@ -71,7 +71,7 @@ open class ASBottomSheet: UIViewController{
      *  Shows the menu from bottom of the provided view controller
      *  - parameter viewController: the host view controller
      */
-    open func showMenu(fromViewController viewController:UIViewController) {
+    @objc public func showMenu(fromViewController viewController:UIViewController) {
         
         if isOpen {
             return
