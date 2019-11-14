@@ -14,7 +14,7 @@ public typealias ActionSuccess = () -> ();
     private var tintedIcon:UIImage? = nil
     
     
-    open var action: ActionSuccess? = nil
+    @objc open var action: ActionSuccess? = nil
     
     @objc public init(withTitle title:String, withIcon icon:UIImage) {
         super.init()
